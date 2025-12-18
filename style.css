@@ -116,3 +116,28 @@ body {
     color: var(--text-muted);
 }
 
+.chats {
+    list-style: none;
+}
+
+.user-chat {
+    display: flex;
+    gap: 12px;
+    padding: 10px 12px;
+    cursor: pointers;
+}
+
+.user-chat:hover {
+    background-color: var(--bg-header);
+}
+
+.user-chat div h3 {
+    font-size: 15px;
+    color: var(--text-primary);
+    
+}
+
+.user-chat div p {
+    font-size: 13px;
+    color: var(--text-secondary);
+}
