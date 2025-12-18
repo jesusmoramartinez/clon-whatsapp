@@ -191,3 +191,83 @@ body {
     text-align: right;
     margin-top: 2px;
 }
+
+.chat-footer {
+    display: flex;
+    align-items: center;
+    align-items: center;
+    padding: 10px;
+    gap: 6px;
+    background-color: var(--bg-header);
+}
+
+.chat-footer form {
+    flex: 1;
+}
+
+.btn-clip {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-clip img {
+    height: 22px;
+    width: 22px;
+    display: block;
+}
+
+.btn-clip:hover {
+    background-color: #ffffff14;
+    color: var(--accent);
+}
+
+.btn-clip:active {
+    transform: scale(0.95);
+}
+
+
+.chat-footer textarea {
+    flex: 1;
+    width: 100%;
+    min-height: 40px;
+    padding: 8px;
+    resize: none;
+    border-radius: 15px;
+    border: none;
+    font-size: 11px;
+    color: var(--text-secondary);
+}
+
+.btn-send {
+    background-color: var(--accent-green);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.btn-send img {
+    height: 22px;
+    width: 22px;
+    display: block;
+}
+
+.btn-send:hover {
+    filter: brightness(1.1);
+}
+
+.btn-send:active {
+    transform: scale(0.95);
+}
