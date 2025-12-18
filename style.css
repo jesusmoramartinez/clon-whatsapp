@@ -2,15 +2,44 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--primary-font);
+    color: var(--text-primary);
 }
+
+:root {
+    /* fondos */
+    --bg-body: #00c16a;            /* verde exterior */
+    --bg-app: #0b141a;             /* fondo general */
+    --bg-aside: #111b21;           /* sidebar */
+    --bg-header: #202c33;          /* headers */
+    --bg-chat: #0b141a;            /* chat */
+    --bg-input: #202c33;           /* input mensajes */
+
+    /* burbujas */
+    --msg-received: #202c33;       /* mensajes recibidos */
+    --msg-sent: #005c4b;           /* mensajes enviados */
+
+    /* texto */
+    --text-primary: #e9edef;       /* texto principal */
+    --text-secondary: #8696a0;     /* estados / horas */
+
+    /* acentos */
+    --accent-green: #00a884;       /* botones / enviar */
+    --accent-hover: #02c39a;
+
+    /* bordes */
+    --border-soft: #2a3942;
+
+    --primary-font: "Roboto", sans-serif;
+}
+
 
 img {
     height: 40px;
 }
 
 body {
-    background: #80ff8c;
-background: radial-gradient(circle, rgba(128, 255, 140, 1) 0%, rgba(255, 74, 74, 1) 36%, rgba(255, 255, 79, 1) 63%, rgb(153, 148, 255) 100%);
+    background: var(--bg-body);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +47,7 @@ background: radial-gradient(circle, rgba(128, 255, 140, 1) 0%, rgba(255, 74, 74,
 }
 
 .chat-app {
-    background-color:#075e54;
+    background-color: var(--bg-app);
     width: 100%;
     max-width: 1800px;
     display: grid;
@@ -27,7 +56,7 @@ background: radial-gradient(circle, rgba(128, 255, 140, 1) 0%, rgba(255, 74, 74,
 }
 
 .barra-contactos {
-    background-color: #075e33;
+    background-color: var(--bg-aside);
     display: grid;
     grid-template-rows: auto 1fr;
     height: 100%;
@@ -65,3 +94,25 @@ background: radial-gradient(circle, rgba(128, 255, 140, 1) 0%, rgba(255, 74, 74,
     object-position: center;
     display: block;
 }
+
+.search {
+    background-color: var(--bg-aside);
+    padding: 8px 12px;
+}
+
+.search form input {
+    width: 100%;
+    display: block;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    background-color: var(--bg-header);
+    color: var(--text-primary);
+    font-size: 14px;
+}
+
+.search form input::placeholder {
+    color: var(--text-muted);
+}
+
