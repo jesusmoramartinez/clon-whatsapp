@@ -25,3 +25,43 @@ background: radial-gradient(circle, rgba(128, 255, 140, 1) 0%, rgba(255, 74, 74,
     grid-template-columns: 380px 1fr;
     height: 100%;
 }
+
+.barra-contactos {
+    background-color: #075e33;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: 100%;
+}
+
+.barra-perfil {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 12px;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.navbar {
+    display: flex;
+    gap: 8px;
+}
+
+.navbar-icons {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.imagen-perfil {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
