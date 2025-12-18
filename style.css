@@ -157,3 +157,37 @@ body {
     background-color: var(--bg-header);
 }
 
+.chat-mensajes {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px 6px;
+}
+
+.mensaje {
+    background-color: #02c39a;
+    max-width: 65%;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+
+}
+
+.mensaje.recibido {
+    align-self: flex-start;
+    background-color: var(--msg-received);
+}
+
+.mensaje.enviado {
+    align-self: flex-end;
+    background-color: var(--msg-sent);
+}
+
+.msg-hora {
+    display: block;
+    font-size: 11px;
+    opacity: 0.6;
+    text-align: right;
+    margin-top: 2px;
+}
