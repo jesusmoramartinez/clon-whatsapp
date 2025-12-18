@@ -141,3 +141,19 @@ body {
     font-size: 13px;
     color: var(--text-secondary);
 }
+
+.chat-panel {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.chat-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px;
+    background-color: var(--bg-header);
+}
+
