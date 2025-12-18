@@ -11,14 +11,17 @@ img {
 body {
     background: #80ff8c;
 background: radial-gradient(circle, rgba(128, 255, 140, 1) 0%, rgba(255, 74, 74, 1) 36%, rgba(255, 255, 79, 1) 63%, rgb(153, 148, 255) 100%);
-    padding: 50px;
-    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
 }
 
 .chat-app {
     background-color:#075e54;
-    text-align: center;
+    width: 100%;
+    max-width: 1800px;
     display: grid;
-    grid-template-columns: 320px 1fr;
-    height: 100vh;
+    grid-template-columns: 380px 1fr;
+    height: 100%;
 }
