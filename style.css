@@ -286,3 +286,14 @@ body {
 .btn-send:active {
     transform: scale(0.95);
 }
+
+/* diseño responsivo */
+@media (max-width: 800px) {
+    .chat-app {
+        grid-template-columns: 1fr;
+    }
+
+    .barra-contactos {
+        display: none;
+    }
+}
